@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+body {
+    background-color: #E9E9E9;
+}
+/** for navbar**/
+.navbar{
+    margin-top: 10px;
+    height:70px;
+    background-color: #ffff;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+   
+
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.hellow::after,
+.hellow::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   transform: translate(-50%, -50%);
+   background: conic-gradient(
+    from var(--angle),
+    transparent 40%,
+    violet, blue, skyblue, green, orange, red, yellow
+);
+
+   z-index: -1;
+   padding: 5px;
+   animation: spin 3s linear infinite;
+}
+
+.hellow::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+
+}
+
+/** effect 2**/
+
+
+
+/** for flipkart logo**/
+.nav-logo{
+    height:40px;
+    width: 160px;
+
+}
+.logo{
+    background-image: url("/logo.svg");
+    background-size: cover;
+    height:40px;
+    width:100%;
+   
+
+}
+
+/** hover effect**/
+.border{
+    border: .5px solid transparent;
+}
+.border:hover{
+    border:4px solid rgb(248, 244, 22);
+}
+
+/** scarch section**/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E9E9E9;
+    height: 40px;
+    width: 620px;
+    border-radius: 10px;
+  
+}
+
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f1111;
+    border:2px solid transparent
+    
+}
+
+
+
+.search-input {
+    width: 100%;
+    font-size: 1em;
+    border: none;
+    background-color: #E9E9E9;
+    border-radius: 10px;
+}
+
+/**login logo**/
+
+.login{
+      height: 24px;
+      width: 94px;
+      padding:8px;
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.login:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/**cart**/
+
+.cart{
+    height:24px;
+    
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**shop**/
+
+.shop{
+    height:24px;
+    padding:8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** three dot**/
+.three-dot{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:24px;
+    width:24px;
+    padding: 8px;
+}
+
+/**shop section**/
+
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.layout1{
+    width: 98%;
+    display:flex;
+    background-color:white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:10px;
+}
+.content{
+    height:100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+   
+}
+.img{
+    height: 64px;
+    width: 64px;
+    background-size: cover;
+
+   
+}
+
+.hover:hover{
+    color:blue;
+  
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/** hero section**/
+
+.hero-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.hero-img{
+    width:98%;
+    height:206px;
+    
+}
+
+/** leyout 2*/
+
+.finaldiv{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    margin-top: 15px;
+}
+
+.h2main{
+    display: flex;
+   padding-top: 15px;
+   background-color: white;
+   width: 98%;
+   
+  
+}
+
+.h2{
+    height:30px;
+
+    width: 98%;
+    
+    background-color:white;
+  
+}
+
+.hi {
+    color:green
+}
+
+.sec2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.layout2{
+   width: 98%;
+    display:flex;
+    background-color:white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.contain2{
+    height:204px;
+    width:156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:12px 24px;
+    }
+
+.contain2 pre{
+        font-weight: bold;
+    }
+
+.contain2 p{
+    font-weight:300;
+}
+
+.img2{
+    height: 152px;
+    width: 156px;
+    background-size:cover ;
+    margin: 0px;
+   
+}
+
+.img2:hover{
+       border:2px solid transparent;
+     
+       background-repeat: no-repeat;
+}
+
+/** layout 3 **/
+
+.layout3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:15px;
+   
+}
+
+.layout3-1{
+    display:flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width:98%
+
+}
+
+.contain3{
+    display: flex;
+    height: 475px;
+    width: 30%;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.layout3-1-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 235px;
+    width:45%;
+    flex-wrap: wrap;
+    border:0.5px solid rgba(0,0,0,0.1);
+    
+}
+
+.img3{
+    display: flex;
+   
+    flex-wrap: wrap;
+    
+}
+.img3-1:hover{
+    border: 4px solid transparent;
+    background-repeat: no-repeat;
+}
+
+.img3-1{
+    height: 145px;
+    width:  145px;
+    background-size: cover;
+}
+
+.layout3-1-1 pre{
+    color: green;
+    font-weight: bold;
+}
+.contain4{
+    display: flex;
+    height: 475px;
+    width: 30%;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    background-color:#F5C922;
+}
+
+.last{
+    height: 100%;
+    width: 100%;
+    background-image: url('/last-img.jpg');
+     background-size:contain ;
+   
+}
+
+
+/**footer**/
+.foot{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.panel1{
+    background-color: #222f3d;
+    color:white;
+    height:300px;
+    display:flex;
+    justify-content: space-evenly;
+    width :98%;
+    
+}
+ul{
+    margin-top:20px;
+}
+ul a{
+    display:block;
+    font-size: 0.85rem;
+    margin-top:10px;
+    color:#dddd;
+}
+
+.panel3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid  white;
+}
+ 
+.info{
+    background-color: #222f3d;
+    color:white;
+    height:100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width :98%;
+}
+.info p{
+    font-weight: bold;
+}
+
+.info pre{
+    padding-top:3px;
+}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
